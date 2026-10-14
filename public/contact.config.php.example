@@ -1,0 +1,20 @@
+<?php
+/**
+ * Copy to contact.config.php (same folder) on the server — do not commit contact.config.php.
+ *
+ * Use SMTP when PHP mail() fails on your host, or for reliable delivery.
+ * Typical cPanel: host mail.yourdomain.com, port 587 + tls, or 465 + ssl.
+ */
+return [
+  'to' => 'support@tcbuae.com',
+  'from_email' => 'support@tcbuae.com',
+  'from_name' => 'TCB Website',
+
+  'smtp' => [
+    'host' => 'mail.tcbuae.com',
+    'port' => 587,
+    'encryption' => 'tls', // tls | ssl
+    'username' => 'support@tcbuae.com',
+    'password' => 'YOUR_MAILBOX_PASSWORD',
+  ],
+];

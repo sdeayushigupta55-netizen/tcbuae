@@ -1,0 +1,39 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+dist.zip
+
+# Local env (e.g. VITE_CONTACT_ENDPOINT)
+.env
+.env.*
+!.env.example
+
+# Contact form SMTP secrets (use contact.config.php.example as template)
+contact.config.php
+public/contact.config.php
+
+# Vite
+*.local
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+pnpm-debug.log*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editors / IDE
+.idea/
+.vscode/*
+!.vscode/extensions.json
+*.swp
+*.swo
+*~
+
+# Optional test / coverage
+coverage/
